@@ -1,0 +1,4 @@
+Strings - String - "Chris B. Beherns"
+Integers - int - 0,1,2,3,4,5,6,7,8,9,10
+Floats - float - 0.5,3.8,98341.12345
+Boolean - boolean - true, falsa 
