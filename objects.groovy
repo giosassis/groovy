@@ -11,17 +11,12 @@ class User {
     }
 }
 
-assert getUserName("Chris", "Behrens") == "cbehrens" : "getUserName isn't working"
+User[] users = [new User (firstName: "Bob", lastName: "Dylan"),
+                new User (firstName: "Jeff", lastName: "Bezos"),
+                new User (firstName: "Roy", lastName: "Orbison"),
+                new User (firstName: "George", lastName: "Harrison"),
+                new User (firstName: "Tom", lastName: "Petty")];
 
-void printCredential (cred) {
-    println("Username is ${cred}");
-}
+users.each(user -> println("UserName is ${user.UserName()}"));
 
-String[] fristsNames = ["Bob", "Jeff", "Roy","George","Tom"]
-String[] lastNames = ["Dylan", "Lynne", "Orbison", "Harrison", "Pretty"]
-
-
-
-for (int i = 0; i < fristsNames.size(); i++) {
-    printCredential(getUserName(fristsNames[i], lastNames[i]));
-}
+//Result: [User@38c69fbe, User@2cde87bd, User@1f9fed38, User@766f41e2, User@7ad81bfe]
