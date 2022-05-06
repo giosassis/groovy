@@ -1,44 +1,41 @@
-//Class - Colletion of data and methods that represents a read world object. 
+//Class - Colletion of data and methods that represents a read world object.
+package com.test.demo
 
-package com.test.demo 
+class Fruits {
 
-class Fruits { 
+    private String fruitName
+    private String fruitColor
 
-private String fruitName;
-private String fruitColor;
+    def setFruitName (String name) {
+        fruitName = name
+    }
 
-def setFruitName (String name) {
-    fruitName = name;
-}
+    def setFruitColor (String color) {
+        fruitColor = color
+    }
 
+    def getFruitName () {
+        println "Name fruit is $fruitName"
+    }
 
-def setFruitColor (String color) {
-    fruitColor = color;
-}
+    def getFruitColor () {
+        println "Color fruit is $fruitColor"
+    }
 
-def getFruitName () {
-    println "Name fruit is $fruitName"
-}
+    static void main(args) {
+        Fruits apple = new Fruits ()
+        apple.setFruitName('apple')
+        apple.setFruitColor('red')
 
-def getFruitColor () {
-    println "Color fruit is $fruitColor"
-}
+        apple.getFruitName()
+        apple.getFruitColor()
 
-static void main(args) {
+        Fruits banana = new Fruits ()
+        banana.setFruitName('banana')
+        banana.setFruitColor('yellow')
 
-    Fruits apple = new Fruits ()
-    apple.setFruitName("apple")
-    apple.setFruitColor("red")
-            
-    apple.getFruitName()s
-    apple.getFruitColor()
-
-    Fruits banana = new Fruits ()
-    banana.setFruitName("banana")
-    banana.setFruitColor("yellow")
-            
-    banana.getFruitName()
-    banana.getFruitColor()
+        banana.getFruitName()
+        banana.getFruitColor()
     }
 
 }

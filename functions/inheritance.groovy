@@ -1,4 +1,4 @@
-class User { 
+class User {
     String lastName;
     String firstName;
 
@@ -36,3 +36,4 @@ users.each(user ->
     } else {
         user.Produce()
     }
+)
