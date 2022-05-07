@@ -40,6 +40,13 @@ class Student {
         student3.sub2Marks = 7
         student3.printTotal()
         student3.calcAvag()
+
+        Student student4 = new Student()
+        student4.name = 'Marina'
+        student4.sub1Marks = 5
+        student4.sub2Marks = 7
+        student4.printTotal()
+        student4.calcAvag()
     }
 
 }
